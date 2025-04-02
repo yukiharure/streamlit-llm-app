@@ -24,7 +24,7 @@ selected_item = st.radio(
 st.divider()
 
 # ユーザーの質問入力を先に取得
-input_message = st.text_input(label="相談内容を入力してください。")
+input_message = st.chat_input(label="相談内容を入力してください。")
 
 system_template = "あなたは、{genre}に詳しいAIです。質問に対して回答してください。"
 human_template = "{question}"
