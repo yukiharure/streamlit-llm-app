@@ -47,5 +47,5 @@ if st.button("実行"):
     else:
         with st.spinner("回答を取得中..."):
             llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0)
-            result = llm.invoke(messages)
+            result = llm(messages)
         st.write(result.content)
